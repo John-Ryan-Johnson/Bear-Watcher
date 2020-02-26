@@ -4,6 +4,7 @@ body {
   background-color: rgb(86, 121, 16);
 }
 
-hr {
-  border-top: 2px solid black;
+#form-container {
+  display: flex;
+  justify-content: center;
 }
