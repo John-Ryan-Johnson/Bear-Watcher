@@ -1,4 +1,9 @@
-import 'bootstrap';
+import bearForm from './components/bearForm/bearForm';
+
 import '../styles/main.scss';
 
-console.error('hi');
+const init = () => {
+  bearForm.loadForm();
+};
+
+init();
