@@ -1,5 +1,6 @@
 import utilities from '../../helpers/utilities';
 import bearsData from '../../helpers/data/bearsData';
+import printBears from '../river/river';
 import './bearForm.scss';
 
 const addBear = (e) => {
@@ -10,6 +11,7 @@ const addBear = (e) => {
   };
   bearsData.bears.push(newBear);
   document.getElementById('bear-form').reset();
+  printBears.printBears();
 };
 
 const printForm = () => {
