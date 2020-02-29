@@ -1,7 +1,7 @@
 import utilities from '../../helpers/utilities';
-import bearsData from '../../helpers/data/bearsData';
+import bearData from '../../helpers/data/bearData';
 import printBears from '../river/river';
-import './bearForm.scss';
+
 
 const addBear = (e) => {
   e.preventDefault();
@@ -9,7 +9,7 @@ const addBear = (e) => {
     name: document.getElementById('bear-name').value,
     imageUrl: document.getElementById('bear-image').value,
   };
-  bearsData.bears.push(newBear);
+  bearData.bears.push(newBear);
   document.getElementById('bear-form').reset();
   printBears.printBears();
 };
@@ -17,7 +17,7 @@ const addBear = (e) => {
 const printForm = () => {
   const domString = `
     <form id="bear-form">
-      <div class="form-row align-items-center mt-5 ml-3">
+      <div class="form-row align-items-center mt-5 mb-5">
        <div class="col-auto">
          <label class="sr-only" for="bear-name">Name</label>
           <input type="text" class="form-control mb-2" id="bear-name" placeholder="Bear Name">
