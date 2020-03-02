@@ -22,4 +22,6 @@ const bears = [
   },
 ];
 
-export default { bears };
+const getBears = () => bears;
+
+export default { getBears };

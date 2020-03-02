@@ -5,11 +5,12 @@ import printBears from '../river/river';
 
 const addBear = (e) => {
   e.preventDefault();
+  const bears = bearData.getBears();
   const newBear = {
     name: document.getElementById('bear-name').value,
     imageUrl: document.getElementById('bear-image').value,
   };
-  bearData.bears.push(newBear);
+  bears.push(newBear);
   document.getElementById('bear-form').reset();
   printBears.printBears();
 };
